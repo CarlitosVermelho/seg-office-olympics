@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(npx create-vite@latest . --template react --skip-git)",
+      "Bash(cp \"Logos/2025/Ctrl+Win.png\" \"public/logos/2025/Ctrl+Win.png\")",
+      "Bash(cp \"Logos/2025/LostConnection.png\" \"public/logos/2025/Lost Connection.png\")",
+      "Bash(cp \"Logos/2025/PowerPuff SEG Girls.png\" \"public/logos/2025/Powerpuff SEG girls.png\")",
+      "Bash(cp \"Logos/2026/Às SEGas.png\" \"public/logos/2026/Às SEGas.png\")",
+      "Bash(cp \"Logos/2026/Coffee Break Champions.png\" \"public/logos/2026/Coffee Break Champions.png\")"
+    ]
+  }
+}

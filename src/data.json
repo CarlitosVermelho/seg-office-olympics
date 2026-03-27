@@ -1,0 +1,182 @@
+{
+  "2025": {
+    "titulo": "Edição 2025",
+    "atividades": [
+      "Bin Basket", "Float Club", "Conference table Ping Pong", "Rubber Band Archery",
+      "Wikipedia Race", "Blindfolded Drawing", "Paper Airplane Race", "Minutes to win it",
+      "Typing Race", "STOP", "Wikitective"
+    ],
+    "equipas": [
+      {
+        "nome": "SEGuríssimo",
+        "pontosFinais": 38.47,
+        "detalhes": {
+          "Bin Basket": 2.22, "Float Club": 5.00, "Conference table Ping Pong": 2.50,
+          "Rubber Band Archery": 1.67, "Wikipedia Race": 3.75, "Blindfolded Drawing": 4.50,
+          "Paper Airplane Race": 2.86, "Minutes to win it": 3.75, "Typing Race": 3.09,
+          "STOP": 4.49, "Wikitective": 4.65
+        }
+      },
+      {
+        "nome": "Give me 5",
+        "pontosFinais": 36.13,
+        "detalhes": {
+          "Bin Basket": 0.56, "Float Club": 2.50, "Conference table Ping Pong": 0.83,
+          "Rubber Band Archery": 3.33, "Wikipedia Race": 5.00, "Blindfolded Drawing": 3.00,
+          "Paper Airplane Race": 4.29, "Minutes to win it": 4.38, "Typing Race": 5.00,
+          "STOP": 3.16, "Wikitective": 4.08
+        }
+      },
+      {
+        "nome": "Lost Connection",
+        "pontosFinais": 33.14,
+        "detalhes": {
+          "Bin Basket": 0.56, "Float Club": 3.33, "Conference table Ping Pong": 5.00,
+          "Rubber Band Archery": 2.22, "Wikipedia Race": 0.83, "Blindfolded Drawing": 3.00,
+          "Paper Airplane Race": 1.43, "Minutes to win it": 3.13, "Typing Race": 4.27,
+          "STOP": 5.00, "Wikitective": 4.37
+        }
+      },
+      {
+        "nome": "SEG&Joga",
+        "pontosFinais": 31.12,
+        "detalhes": {
+          "Bin Basket": 2.22, "Float Club": 1.67, "Conference table Ping Pong": 3.33,
+          "Rubber Band Archery": 4.44, "Wikipedia Race": 1.25, "Blindfolded Drawing": 3.00,
+          "Paper Airplane Race": 3.57, "Minutes to win it": 1.88, "Typing Race": 2.71,
+          "STOP": 3.88, "Wikitective": 3.17
+        }
+      },
+      {
+        "nome": "Powerpuff SEG girls",
+        "pontosFinais": 30.22,
+        "detalhes": {
+          "Bin Basket": 1.11, "Float Club": 0.83, "Conference table Ping Pong": 0.83,
+          "Rubber Band Archery": 0.56, "Wikipedia Race": 3.33, "Blindfolded Drawing": 3.00,
+          "Paper Airplane Race": 2.86, "Minutes to win it": 5.00, "Typing Race": 3.85,
+          "STOP": 4.90, "Wikitective": 3.94
+        }
+      },
+      {
+        "nome": "Ctrl+Win",
+        "pontosFinais": 23.19,
+        "detalhes": {
+          "Bin Basket": 0.56, "Float Club": 0.83, "Conference table Ping Pong": 1.67,
+          "Rubber Band Archery": 1.11, "Wikipedia Race": 2.92, "Blindfolded Drawing": 2.50,
+          "Paper Airplane Race": 0.71, "Minutes to win it": 2.50, "Typing Race": 2.64,
+          "STOP": 3.67, "Wikitective": 4.08
+        }
+      }
+    ]
+  },
+  "2026": {
+    "titulo": "Edição 2026",
+    "atividades": [
+      "Conference Room Pong", "The Toilet Paper Tension Test", "Whitney Houston Challenge",
+      "The Lip-Reading Whisper Challenge", "Float Club", "Cotton Ball Craze",
+      "The Tabletop Rhythm Challenge", "Blindfolded Minefield", "Paperclip Relay",
+      "The Office Charades", "Watercooler Trivia"
+    ],
+    "equipas": [
+      {
+        "nome": "VenSEGdores",
+        "pontosFinais": 42.25,
+        "detalhes": {
+          "Conference Room Pong": 3.89, "The Toilet Paper Tension Test": 5.00,
+          "Whitney Houston Challenge": 3.33, "The Lip-Reading Whisper Challenge": 5.00,
+          "Float Club": 1.84, "Cotton Ball Craze": 2.78, "The Tabletop Rhythm Challenge": 4.00,
+          "Blindfolded Minefield": 4.44, "Paperclip Relay": 3.08, "The Office Charades": 5.00,
+          "Watercooler Trivia": 3.89
+        }
+      },
+      {
+        "nome": "Coffee Break Champions",
+        "pontosFinais": 35.22,
+        "detalhes": {
+          "Conference Room Pong": 0.56, "The Toilet Paper Tension Test": 3.33,
+          "Whitney Houston Challenge": 5.00, "The Lip-Reading Whisper Challenge": 5.00,
+          "Float Club": 3.68, "Cotton Ball Craze": 3.33, "The Tabletop Rhythm Challenge": 3.00,
+          "Blindfolded Minefield": 2.22, "Paperclip Relay": 1.92, "The Office Charades": 2.73,
+          "Watercooler Trivia": 4.44
+        }
+      },
+      {
+        "nome": "Desk Drifters",
+        "pontosFinais": 35.13,
+        "detalhes": {
+          "Conference Room Pong": 3.89, "The Toilet Paper Tension Test": 3.33,
+          "Whitney Houston Challenge": 1.67, "The Lip-Reading Whisper Challenge": 3.50,
+          "Float Club": 2.89, "Cotton Ball Craze": 3.89, "The Tabletop Rhythm Challenge": 3.00,
+          "Blindfolded Minefield": 3.33, "Paperclip Relay": 3.46, "The Office Charades": 2.27,
+          "Watercooler Trivia": 3.89
+        }
+      },
+      {
+        "nome": "Ctrl+Alt+Win",
+        "pontosFinais": 34.44,
+        "detalhes": {
+          "Conference Room Pong": 4.44, "The Toilet Paper Tension Test": 4.17,
+          "Whitney Houston Challenge": 1.67, "The Lip-Reading Whisper Challenge": 3.00,
+          "Float Club": 1.84, "Cotton Ball Craze": 3.33, "The Tabletop Rhythm Challenge": 2.00,
+          "Blindfolded Minefield": 3.33, "Paperclip Relay": -0.77, "The Office Charades": 4.55,
+          "Watercooler Trivia": 2.78
+        }
+      },
+      {
+        "nome": "PowerPuff SEG Girls",
+        "pontosFinais": 29.97,
+        "detalhes": {
+          "Conference Room Pong": 5.00, "The Toilet Paper Tension Test": 2.50,
+          "Whitney Houston Challenge": 1.67, "The Lip-Reading Whisper Challenge": 2.00,
+          "Float Club": 1.05, "Cotton Ball Craze": 5.00, "The Tabletop Rhythm Challenge": 2.00,
+          "Blindfolded Minefield": 3.33, "Paperclip Relay": -0.77, "The Office Charades": 3.18,
+          "Watercooler Trivia": 5.00
+        }
+      },
+      {
+        "nome": "No Internet Connection",
+        "pontosFinais": 26.09,
+        "detalhes": {
+          "Conference Room Pong": 1.67, "The Toilet Paper Tension Test": 1.67,
+          "Whitney Houston Challenge": 3.33, "The Lip-Reading Whisper Challenge": 0.00,
+          "Float Club": 1.05, "Cotton Ball Craze": 4.44, "The Tabletop Rhythm Challenge": 1.00,
+          "Blindfolded Minefield": 3.89, "Paperclip Relay": 5.00, "The Office Charades": 1.82,
+          "Watercooler Trivia": 2.22
+        }
+      },
+      {
+        "nome": "You will be Accountable",
+        "pontosFinais": 23.91,
+        "detalhes": {
+          "Conference Room Pong": 1.11, "The Toilet Paper Tension Test": 4.17,
+          "Whitney Houston Challenge": 1.67, "The Lip-Reading Whisper Challenge": 5.00,
+          "Float Club": 0.79, "Cotton Ball Craze": 1.11, "The Tabletop Rhythm Challenge": 2.00,
+          "Blindfolded Minefield": 5.00, "Paperclip Relay": -2.69, "The Office Charades": 4.09,
+          "Watercooler Trivia": 1.67
+        }
+      },
+      {
+        "nome": "Às SEGas",
+        "pontosFinais": 23.18,
+        "detalhes": {
+          "Conference Room Pong": 2.22, "The Toilet Paper Tension Test": 2.50,
+          "Whitney Houston Challenge": 0.00, "The Lip-Reading Whisper Challenge": 1.50,
+          "Float Club": 0.00, "Cotton Ball Craze": 1.67, "The Tabletop Rhythm Challenge": 5.00,
+          "Blindfolded Minefield": 1.67, "Paperclip Relay": 4.23, "The Office Charades": 2.73,
+          "Watercooler Trivia": 1.67
+        }
+      },
+      {
+        "nome": "Está SEGuro!",
+        "pontosFinais": 18.20,
+        "detalhes": {
+          "Conference Room Pong": 3.89, "The Toilet Paper Tension Test": 3.33,
+          "Whitney Houston Challenge": 0.00, "The Lip-Reading Whisper Challenge": 4.50,
+          "Float Club": 1.84, "Cotton Ball Craze": 2.22, "The Tabletop Rhythm Challenge": 1.00,
+          "Blindfolded Minefield": 1.67, "Paperclip Relay": -3.08, "The Office Charades": 2.27,
+          "Watercooler Trivia": 0.56
+        }
+      }
+    ]
+  }
+}

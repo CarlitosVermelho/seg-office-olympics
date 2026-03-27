@@ -1,0 +1,304 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ================================================================
+   GLOBAL — Pure white radiant background
+================================================================ */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #FFFFFF;
+  background-image:
+    radial-gradient(ellipse at 15% 10%, rgba(212, 160, 23, 0.05) 0%, transparent 45%),
+    radial-gradient(ellipse at 85% 5%,  rgba(192, 192, 192, 0.04) 0%, transparent 40%),
+    radial-gradient(ellipse at 50% 95%, rgba(29,  78,  216, 0.03) 0%, transparent 50%);
+  background-attachment: fixed;
+  color: #0A1628;
+  min-height: 100vh;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+/* ================================================================
+   GLASS SURFACES — Crystal white on white background
+================================================================ */
+.glass {
+  background: rgba(255, 255, 255, 0.90);
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.06),
+    0 1px 4px rgba(0, 0, 0, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+/* Crystal-glass podium cards */
+.podium-gold {
+  background: rgba(255, 255, 255, 0.97);
+  border: 1.5px solid rgba(212, 160, 23, 0.40);
+  box-shadow:
+    0 0 60px rgba(212, 160, 23, 0.10),
+    0 20px 60px rgba(0, 0, 0, 0.09),
+    0 2px 8px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 215, 0, 0.45),
+    inset 0 -1px 0 rgba(180, 130, 0, 0.08);
+}
+
+.podium-silver {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1.5px solid rgba(192, 192, 192, 0.40);
+  box-shadow:
+    0 0 40px rgba(192, 192, 192, 0.08),
+    0 16px 48px rgba(0, 0, 0, 0.07),
+    0 2px 8px rgba(0, 0, 0, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.podium-bronze {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1.5px solid rgba(205, 127, 50, 0.38);
+  box-shadow:
+    0 0 40px rgba(205, 127, 50, 0.08),
+    0 16px 48px rgba(0, 0, 0, 0.07),
+    0 2px 8px rgba(0, 0, 0, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+/* ================================================================
+   MEDAL TEXT COLORS — solid, readable
+================================================================ */
+.text-gold   { color: #92690A; }
+.text-silver { color: #505050; }
+.text-bronze { color: #7A3B10; }
+
+/* ================================================================
+   ANIMATIONS
+================================================================ */
+@keyframes shimmer {
+  0%   { background-position: -250% center; }
+  100% { background-position: 250% center; }
+}
+
+.shimmer-gold { color: #92690A; }
+
+@keyframes goldPulse {
+  0%, 100% {
+    box-shadow:
+      0 0 40px rgba(212, 160, 23, 0.08),
+      0 20px 60px rgba(0, 0, 0, 0.09),
+      inset 0 1px 0 rgba(255, 215, 0, 0.45);
+  }
+  50% {
+    box-shadow:
+      0 0 80px rgba(212, 160, 23, 0.18),
+      0 24px 70px rgba(0, 0, 0, 0.10),
+      inset 0 1px 0 rgba(255, 215, 0, 0.55);
+  }
+}
+
+.glow-gold {
+  animation: goldPulse 4s ease-in-out infinite;
+}
+
+@keyframes floatUp {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-7px); }
+}
+
+.float {
+  animation: floatUp 5s ease-in-out infinite;
+}
+
+/* ================================================================
+   HEADER EMBLEM — Polished light metal
+================================================================ */
+.emblem {
+  background: linear-gradient(145deg, #f0f0f0, #ffffff, #e4e4e4);
+  box-shadow:
+    4px 4px 14px rgba(0, 0, 0, 0.10),
+    -2px -2px 6px rgba(255, 255, 255, 0.95),
+    inset 0 1px 0 rgba(255, 255, 255, 0.90);
+  border: 1px solid rgba(212, 160, 23, 0.38);
+}
+
+/* ================================================================
+   METALLIC DATE PLAQUE — Light polished
+================================================================ */
+.plaque {
+  background: linear-gradient(145deg, #f5f5f5, #fafafa, #eeeeee);
+  box-shadow:
+    2px 2px 10px rgba(0, 0, 0, 0.09),
+    -1px -1px 3px rgba(255, 255, 255, 0.95),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(212, 160, 23, 0.28);
+}
+
+/* ================================================================
+   GOLD DIVIDER LINE
+================================================================ */
+.divider-gold {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(212, 160, 23, 0.30) 25%,
+    rgba(255, 215, 0, 0.55) 50%,
+    rgba(212, 160, 23, 0.30) 75%,
+    transparent 100%
+  );
+}
+
+/* ================================================================
+   3D MEDAL CIRCLES — unchanged, still beautiful on white
+================================================================ */
+.medal-gold-3d {
+  background: radial-gradient(circle at 33% 28%, #FFF8DC, #FFD700 38%, #DAA520 68%, #8B6500);
+  box-shadow:
+    0 0 24px rgba(255, 215, 0, 0.35),
+    0 6px 16px rgba(0, 0, 0, 0.20),
+    inset 0 3px 6px rgba(255, 248, 220, 0.55),
+    inset 0 -2px 4px rgba(100, 70, 0, 0.4);
+}
+
+.medal-silver-3d {
+  background: radial-gradient(circle at 33% 28%, #FFFFFF, #D0D0D0 38%, #A0A0A0 68%, #606060);
+  box-shadow:
+    0 0 18px rgba(200, 200, 200, 0.25),
+    0 6px 16px rgba(0, 0, 0, 0.18),
+    inset 0 3px 6px rgba(255, 255, 255, 0.55),
+    inset 0 -2px 4px rgba(50, 50, 50, 0.4);
+}
+
+.medal-bronze-3d {
+  background: radial-gradient(circle at 33% 28%, #F0C080, #CD7F32 38%, #9A5C1A 68%, #5A2E00);
+  box-shadow:
+    0 0 18px rgba(205, 127, 50, 0.28),
+    0 6px 16px rgba(0, 0, 0, 0.18),
+    inset 0 3px 6px rgba(240, 192, 128, 0.5),
+    inset 0 -2px 4px rgba(60, 30, 0, 0.4);
+}
+
+/* ================================================================
+   TEAM LOGO FALLBACK — Metallic shield crest
+================================================================ */
+.crest-fallback {
+  background: linear-gradient(145deg, #e8e8e8, #f8f8f8, #d8d8d8);
+  box-shadow:
+    2px 2px 8px rgba(0, 0, 0, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(180, 180, 180, 0.30);
+}
+
+/* ================================================================
+   ICON CASE (Activity cards) — clean light case
+================================================================ */
+.icon-case {
+  background: rgba(248, 249, 255, 0.95);
+  box-shadow:
+    0 2px 12px rgba(0, 0, 0, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* ================================================================
+   SECTION TITLE BAR
+================================================================ */
+.section-bar {
+  width: 3px;
+  border-radius: 2px;
+  background: linear-gradient(to bottom, #FFD700, #B8860B, transparent);
+}
+
+/* ================================================================
+   EDITION TABS
+================================================================ */
+.tab-btn {
+  padding: 10px 32px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  line-height: 1;
+}
+
+.tab-btn-active {
+  background: linear-gradient(135deg, #92690A, #FFD700 45%, #DAA520 70%, #92690A);
+  color: #1a0f00;
+  box-shadow: 0 4px 20px rgba(212, 160, 23, 0.35), inset 0 1px 0 rgba(255,248,220,0.5);
+}
+
+.tab-btn-inactive {
+  background: transparent;
+  color: rgba(10, 22, 40, 0.35);
+}
+
+.tab-btn-inactive:hover {
+  color: rgba(10, 22, 40, 0.70);
+  background: rgba(0, 0, 0, 0.04);
+}
+
+/* ================================================================
+   EDITION CONTENT TRANSITION
+================================================================ */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+.edition-content {
+  animation: fadeInUp 0.35s ease-out;
+}
+
+/* ================================================================
+   PODIUM GROW — scales from the ground up
+================================================================ */
+@keyframes growPodium {
+  from { transform: scaleY(0); opacity: 0; }
+  to   { transform: scaleY(1); opacity: 1; }
+}
+
+/* ================================================================
+   REST LIST — fade + slide per row
+================================================================ */
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ================================================================
+   ACTIVITY CARDS — CSS-variable-driven accent colors (light theme)
+================================================================ */
+.act-card {
+  --accent-rgb: 10 22 40;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.03);
+  transition: box-shadow 0.28s ease, border-color 0.28s ease, transform 0.28s ease;
+}
+
+.act-card:hover {
+  border-color: rgb(var(--accent-rgb) / 0.22);
+  box-shadow:
+    0 0 24px rgb(var(--accent-rgb) / 0.08),
+    0 8px 32px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+/* ================================================================
+   SCROLLBAR — Light gold tint
+================================================================ */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.03); }
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 160, 23, 0.22);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover { background: rgba(212, 160, 23, 0.40); }
