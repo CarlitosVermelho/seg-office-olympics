@@ -31,12 +31,12 @@ export default function App() {
       {/* Hero + Edition Tabs */}
       <div className="text-center py-14 px-6">
         <h2 className="text-[#0A1628] text-3xl sm:text-4xl font-black tracking-tight mb-10">
-          🥇 {winner.nome} · Campeões {activeEdition}
+          🥇 {winner.nome} · Champions {activeEdition}
         </h2>
 
         {/* Tab switcher */}
         <div className="flex flex-col items-center gap-3">
-          <p className="text-[#0A1628]/25 text-xs font-bold uppercase tracking-[0.25em]">Edições</p>
+          <p className="text-[#0A1628]/25 text-xs font-bold uppercase tracking-[0.25em]">Editions</p>
           <div className="glass rounded-2xl p-1.5 inline-flex gap-1">
             {editions.map(year => (
               <button
@@ -48,6 +48,9 @@ export default function App() {
               </button>
             ))}
           </div>
+          <p className="text-[#0A1628]/35 text-xs font-medium tracking-wide">
+            Showing results for <span className="font-black text-gold">{activeEdition}</span>
+          </p>
         </div>
       </div>
 
@@ -81,7 +84,7 @@ export default function App() {
             <span className="text-3xl filter drop-shadow-lg">🏆</span>
             <div>
               <p className="text-[#0A1628]/35 text-xs uppercase tracking-[0.2em]">
-                Campeão · {edition.titulo}
+                Champion · {edition.titulo}
               </p>
               <p className="text-gold font-black text-base">
                 🥇 {winner.nome}
@@ -89,7 +92,7 @@ export default function App() {
             </div>
           </div>
           <p className="text-[#0A1628]/25 text-xs text-center sm:text-right">
-            Office Olympics · Classificação Oficial
+            Office Olympics · Official Rankings
           </p>
         </div>
         <div className="divider-gold opacity-40" />

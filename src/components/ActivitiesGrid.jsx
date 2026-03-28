@@ -16,8 +16,8 @@ export default function ActivitiesGrid({ atividades, equipas, year }) {
       <div className="flex items-center gap-4 mb-10">
         <div className="section-bar h-10" />
         <div>
-          <p className="text-gold text-xs font-bold uppercase tracking-[0.25em] mb-0.5">Provas</p>
-          <h2 className="text-[#0A1628] text-2xl font-black tracking-tight">Atividades</h2>
+          <p className="text-gold text-xs font-bold uppercase tracking-[0.25em] mb-0.5">Events</p>
+          <h2 className="text-[#0A1628] text-2xl font-black tracking-tight">Activities</h2>
         </div>
       </div>
 
@@ -77,7 +77,7 @@ export default function ActivitiesGrid({ atividades, equipas, year }) {
 
                       {/* Team name */}
                       <span
-                        className={`flex-1 text-xs truncate ${
+                        className={`flex-1 text-xs sm:text-sm truncate ${
                           isFirst
                             ? 'text-[#0A1628]/90 font-bold'
                             : 'text-[#0A1628]/45 font-medium'
@@ -89,7 +89,7 @@ export default function ActivitiesGrid({ atividades, equipas, year }) {
 
                       {/* Score */}
                       <span
-                        className={`text-xs tabular-nums font-black flex-shrink-0 ${
+                        className={`text-xs sm:text-sm tabular-nums font-black flex-shrink-0 ${
                           isFirst
                             ? 'text-gold'
                             : team.actScore < 0

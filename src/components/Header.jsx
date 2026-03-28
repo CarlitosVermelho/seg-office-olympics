@@ -23,7 +23,7 @@ export default function Header() {
             </span>
           </div>
           <p className="text-[#0A1628]/40 text-xs font-medium tracking-[0.15em] uppercase mt-0.5">
-            Classificação Oficial
+            Official Rankings
           </p>
         </div>
 

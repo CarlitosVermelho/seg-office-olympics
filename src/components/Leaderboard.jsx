@@ -49,7 +49,8 @@ const PODIUM = {
     textScore:    'text-gold',
     textName:     'text-gold',
     labelColor:   'text-[#B8860B]/60',
-    label:        'Ouro',
+    label:        'Gold',
+    posLabel:     '1st Place',
     minH:         'min-h-[420px]',
     topPad:       'pt-2',
     width:        'w-[260px]',
@@ -68,7 +69,8 @@ const PODIUM = {
     textScore:    'text-silver',
     textName:     'text-silver',
     labelColor:   'text-[#606060]/80',
-    label:        'Prata',
+    label:        'Silver',
+    posLabel:     '2nd Place',
     minH:         'min-h-[300px]',
     topPad:       'pt-8',
     width:        'w-[220px]',
@@ -88,6 +90,7 @@ const PODIUM = {
     textName:     'text-bronze',
     labelColor:   'text-[#7A3B10]/75',
     label:        'Bronze',
+    posLabel:     '3rd Place',
     minH:         'min-h-[240px]',
     topPad:       'pt-14',
     width:        'w-[200px]',
@@ -148,12 +151,23 @@ function PodiumCard({ team, year }) {
 
   return (
     <div
-      className={`${cfg.width} ${cfg.zIdx}`}
+      className={`${cfg.width} ${cfg.zIdx} ${
+        team.position === 1 ? 'order-1 sm:order-2' :
+        team.position === 2 ? 'order-2 sm:order-1' :
+        'order-3'
+      }`}
       style={{
         transformOrigin: 'center bottom',
         animation: `growPodium ${cfg.growDuration}ms cubic-bezier(0.22,1,0.36,1) ${cfg.growDelay}ms both`,
       }}
     >
+      {/* Position label above card */}
+      <div className="text-center mb-2">
+        <span className={`text-xs font-black uppercase tracking-[0.2em] ${cfg.labelColor}`}>
+          {cfg.posLabel}
+        </span>
+      </div>
+
       <div
         className={`
           ${cfg.podiumClass} ${cfg.minH} ${cfg.topPad}
@@ -180,7 +194,7 @@ function PodiumCard({ team, year }) {
           <span className={`${cfg.textScore} ${cfg.scoreSize} font-black tabular-nums`}>
             {fmt(score)}
           </span>
-          <p className="text-[#0A1628]/25 text-xs font-semibold tracking-widest uppercase mt-0.5">pontos</p>
+          <p className="text-[#0A1628]/25 text-xs font-semibold tracking-widest uppercase mt-0.5">points</p>
         </div>
 
         <span className={`${cfg.labelColor} text-xs font-bold uppercase tracking-[0.3em]`}>{cfg.label}</span>
@@ -236,7 +250,7 @@ export default function Leaderboard({ equipas, titulo, year }) {
         <div className="section-bar h-10" />
         <div>
           <p className="text-gold text-xs font-bold uppercase tracking-[0.25em] mb-0.5">{titulo}</p>
-          <h2 className="text-[#0A1628] text-2xl font-black tracking-tight">Classificação Geral</h2>
+          <h2 className="text-[#0A1628] text-2xl font-black tracking-tight">Overall Rankings</h2>
         </div>
       </div>
 
